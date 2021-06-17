@@ -27,6 +27,7 @@ public class NewMain {
         // not the implementation.
         System.setProperty("webdriver.chrome.driver", "E:\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         
         //Navigate to www.amazon.com
         driver.navigate().to("https://www.amazon.com");
